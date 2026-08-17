@@ -1,0 +1,17 @@
+type IconProps = { name: string; className?: string }
+
+export default function Icon({ name, className = 'h-6 w-6' }: IconProps) {
+  if (name === 'back') return <svg viewBox="0 0 24 24" className={className} fill="none" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+  if (name === 'chevron') return <svg viewBox="0 0 24 24" className={className} fill="none" aria-hidden="true"><path d="m9 5 7 7-7 7" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+  if (name === 'down') return <svg viewBox="0 0 24 24" className={className} fill="none" aria-hidden="true"><path d="m6 9 6 6 6-6" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" /></svg>
+  if (name === 'calendar') return <svg viewBox="0 0 24 24" className={className} fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3" stroke="currentColor" strokeWidth="1.8" /><path d="M7 3v4M17 3v4M3 10h18" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" /><path d="M8 14h.01M12 14h.01M16 14h.01M8 17h.01M12 17h.01" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" /></svg>
+  if (name === 'receipt' || name === 'bill') return <svg viewBox="0 0 24 24" className={className} fill="none" aria-hidden="true"><path d="M7 4h10a2 2 0 0 1 2 2v15l-3-2-2 2-2-2-2 2-2-2-3 2V6a2 2 0 0 1 2-2Z" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round" /><path d="M9 9h6M9 13h7M9 16h5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" /></svg>
+  if (name === 'bell') return <svg viewBox="0 0 28 28" className={className} fill="none" aria-hidden="true"><path d="M8 20h12l-1.2-2.2V12a4.8 4.8 0 0 0-9.6 0v5.8L8 20Z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" /><path d="M12 23h4M14 5V3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /><circle cx="21" cy="8" r="2" fill="currentColor" /></svg>
+  if (name === 'home') return <svg viewBox="0 0 28 28" className={className} fill="none" aria-hidden="true"><path d="M5 13 14 6l9 7v10H8V13" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" /><path d="M12 23v-6h4v6" stroke="currentColor" strokeWidth="2" /></svg>
+  if (name === 'rupee') return <span className={`${className} grid place-items-center text-2xl font-medium`}>₹</span>
+  if (name === 'bulb') return <svg viewBox="0 0 28 28" className={className} fill="none" aria-hidden="true"><path d="M10 15a5 5 0 1 1 8 0c-1.4 1.2-2 2.3-2 4h-4c0-1.7-.6-2.8-2-4Z" stroke="currentColor" strokeWidth="2" /><path d="M12 23h4M14 2v3M5 7l2 2M23 7l-2 2M3 16h3M22 16h3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
+  if (name === 'check') return <svg viewBox="0 0 24 24" className={className} fill="none" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" /></svg>
+  if (name === 'filter') return <svg viewBox="0 0 24 24" className={className} fill="none" aria-hidden="true"><path d="M4 7h16M7 12h10M10 17h4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
+  if (name === 'spotify') return <svg viewBox="0 0 48 48" className={className} fill="none" aria-hidden="true"><circle cx="24" cy="24" r="19" fill="currentColor" /><path d="M13 18.5c7.3-2.2 15.9-1.5 22.1 2M14.5 24.6c5.8-1.7 12.9-1.2 17.9 1.5M16 30.3c4.6-1.1 9.2-.8 13.3 1.2" stroke="#061d13" strokeWidth="3" strokeLinecap="round" /></svg>
+  return null
+}

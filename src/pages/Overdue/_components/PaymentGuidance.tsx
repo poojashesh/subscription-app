@@ -1,0 +1,3 @@
+import Icon from '../../../common/components/Icon'
+
+export default function PaymentGuidance() { return <><section className="mx-4 mt-5 rounded-[10px] bg-[#f8f8f8] px-5 py-6"><h2 className="text-[20px] font-extrabold">Why pay on time?</h2>{['Avoid late fees & penalties', 'Maintain good credit score', 'Stay on top of your finances'].map((item) => <p key={item} className="mt-6 flex items-center gap-2 text-[16px] font-bold"><Icon name="check" className="h-5 w-5 text-[#087c4b]" />{item}</p>)}</section><section className="mx-4 mt-4 rounded-[10px] bg-[#f4fbdd] px-5 py-4"><h2 className="text-[20px] font-extrabold">Tip</h2><p className="mt-3 pr-10 text-[16px] font-medium leading-snug">Enable auto-pay or set reminders to never miss a payment.</p></section></> }

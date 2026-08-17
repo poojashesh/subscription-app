@@ -1,0 +1,1 @@
+export default function Filters() { return <div className="mt-6 flex gap-1 px-4">{['All (18)', 'Subscription (7)', 'Bill (5)', 'EMIs (4)', 'Rewards (4)'].map((filter, index) => <button key={filter} type="button" className={`h-[26px] rounded-[6px] px-2 text-[10px] font-bold ${index === 0 ? 'bg-[#e9f7dc] text-[#0b713a]' : 'bg-[#f5f5f5]'}`}>{filter}</button>)}</div> }

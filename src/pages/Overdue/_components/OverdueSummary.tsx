@@ -1,0 +1,3 @@
+import Icon from '../../../common/components/Icon'
+
+export default function OverdueSummary() { return <section className="mx-4 mt-[23px] flex h-[142px] items-center justify-between rounded-[10px] bg-[#fff3f3] px-5"><div><p className="text-[12px] font-bold text-black/70">Total Overdue Amount</p><p className="mt-2 text-[24px] font-extrabold text-[#ff4c4c]">₹1,239</p><p className="mt-4 text-[10px] font-bold">2 overdue payments</p></div><div className="grid h-[76px] w-[76px] place-items-center rounded-[18px] bg-white text-[#087c4b] shadow-sm"><Icon name="calendar" className="h-11 w-11" /></div></section> }
